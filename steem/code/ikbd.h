@@ -34,11 +34,11 @@ EXT int mouse_speed INIT(10);
 extern BYTE TaskSwitchVKList[4];
 extern bool CutTaskSwitchVKDown[4];
 #endif
-
+
 #define STKEY_PAD_DIVIDE 0x65
 #define STKEY_PAD_ENTER 0x72
 
-EXT int mouse_move_since_last_interrupt_x,mouse_move_since_last_interrupt_y;
+EXT int mouse_move_since_last_interrupt_x,mouse_move_since_last_interrupt_y;
 EXT bool mouse_change_since_last_interrupt;
 EXT int mousek;
 
@@ -78,7 +78,7 @@ BYTE key_table[256]={
 BYTE TaskSwitchVKList[4]={VK_ESCAPE,VK_TAB,VK_DELETE,0};
 bool CutTaskSwitchVKDown[4]={0,0,0,0};
 #endif
-
+
 void IKBD_VBL();
 void agenda_ikbd_process(int);  //intelligent keyboard handle byte
 void ikbd_run_start(bool);

@@ -36,7 +36,7 @@ struct _BLITTER_STRUCT{
 
   bool NeedDestRead; //from Op
 
-  bool InBlitter_Draw; //are we in the routine?
+  bool InBlitter_Draw; //are we in the routine?
 
 }Blit;
 

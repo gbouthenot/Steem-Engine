@@ -4,7 +4,7 @@
 #else
 #define EXT extern
 #define INIT(s)
-#endif
+#endif
 
 #define FLOPPY_MAX_BYTESPERSECTOR 512
 #define FLOPPY_MAX_TRACK_NUM      85
@@ -36,7 +36,7 @@ EXT void pasti_handle_return(struct pastiIOINFO*);
 EXT void pasti_motor_proc(BOOL);
 EXT void pasti_log_proc(const char *);
 EXT void pasti_warn_proc(const char *);
-
+
 EXT HINSTANCE hPasti INIT(NULL);
 EXT int pasti_update_time;
 EXT const struct pastiFUNCS *pasti INIT(NULL);

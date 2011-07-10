@@ -4,7 +4,7 @@
 #else
 #define EXT extern
 #define INIT(s)
-#endif
+#endif
 
 extern DWORD get_shifter_draw_pointer(int);
 

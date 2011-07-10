@@ -1,6 +1,6 @@
 void CreateNotifyInitWin();
 void DestroyNotifyInitWin();
-void SetNotifyInitText(char*);
+void SetNotifyInitText(char*);
 
 #ifdef WIN32
 LRESULT __stdcall NotifyInitWndProc(HWND,UINT,WPARAM,LPARAM);
