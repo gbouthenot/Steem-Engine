@@ -106,7 +106,7 @@ void intercept_os()
 
 #ifndef NO_CRAZY_MONITOR
   if (extended_monitor){
-    if ((ir&15)==2){ //VDI or AES
+    if ((ir&0xffff)==0x4e42){ //instruction is TRAP #2 (VDI or AES)
 #ifdef ENABLE_LOGFILE
       if (logsection_enabled[LOGSECTION_TRAP]) log_os_call(2);
 #endif
